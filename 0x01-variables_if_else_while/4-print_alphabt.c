@@ -1,20 +1,24 @@
 #include <stdio.h>
+#include <time>
+#include <stdlib.h>
 
 /**
- * main - prints the alphabets in lower case
- * followed by a new line
+ * main - Entry
  * Return: Always 0
  */
+
 int main(void)
 {
-	char la;
+	char low, e, q;
 
-	for (la = 'a'; la <= 'z'; la++)
+	e = 'e';
+	q = 'q';
+
+	for (low = 'a'; low <= 'z'; low++)
 	{
-		if (la != 'e' && la != 'q')
-			putchar(la);
+	if (low != e && low != q)
+	putchar(low);
 	}
-
-	puctchar('\n');
+	putchar('\n');
 	return (0);
 }
