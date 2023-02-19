@@ -2,7 +2,7 @@
 
 /**
  * main - prints single digits in base 10
- * Return: Anaways 0
+ * Return: Always 0
  */
 int main(void)
 {
@@ -10,6 +10,8 @@ int main(void)
 
 	for (num = 0; num < 10; num++)
 		putcher((num % 10) + '0');
+
 	putcher('\n');
+
 	return (0);
 }
