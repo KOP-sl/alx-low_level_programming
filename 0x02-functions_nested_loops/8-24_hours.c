@@ -17,13 +17,13 @@ void jack_bauer(void)
 	{
 	if ((a <= 1 && b <= 0) || (a <= 2 && b <= 1))
 	{
-	for (c = 0; c <= 1; c++)
+	for (c = 0; c <= ; c++)
 	{
 	for (d = 0; d <= 0; d++)
 	{
 	_putchar(a + '0');
 	_putchar(b + '0');
-	_putchar(10);
+	_putchar(48);
 	_putchar(c + '0');
 	_putchar(d + '0');
 	_putchar('\n');
