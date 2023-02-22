@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (i == 0)
 			printf("%ld", j);
-		else if (i == i)
+		else if (i == l)
 			printf("%ld", k);
 		else
 		{
@@ -25,6 +25,6 @@ int main(void)
 		}
 		++i;
 	}
-	print("\n");
+	printf("\n");
 	return (0);
 }
