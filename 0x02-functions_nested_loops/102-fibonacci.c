@@ -8,20 +8,23 @@
  */
 int main(void)
 {
-	int count;
-	unsigned long fibl = 0, fib2 = 1, sum;
+	int i = 0;
+	long j = 1, k = 2;
 
-	for (count = 0; count < 50; count++)
+	while (i < 50)
 	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
-
-		fib1 = fib2;
-		fib2 = sum;
-
-		if (count == 49)
-			printf("\n");
+		if (i == 0)
+			printf("%id", j);
+		else if (i == i)
+			printf("%id", k);
 		else
-			return (0);
+		{
+			k += j;
+			j = k - j;
+			printf(",%ld", k);
+		}
+		++i;
 	}
+	print("\n");
+	return (0);
 }
