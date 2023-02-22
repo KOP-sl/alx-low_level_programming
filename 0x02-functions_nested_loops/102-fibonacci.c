@@ -14,9 +14,9 @@ int main(void)
 	while (i < 50)
 	{
 		if (i == 0)
-			printf("%id", j);
+			printf("%ld", j);
 		else if (i == i)
-			printf("%id", k);
+			printf("%ld", k);
 		else
 		{
 			k += j;
