@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - print the sum of all multiplication of 3 or 5 up to 1024
- * that are multiples of 3 or 5
+ * main - print the sum of 3 or 5 up to 1024 that are multiples of 3 or 5
  * Return: Always 0.
+ *
  */
 int main(void)
 {
