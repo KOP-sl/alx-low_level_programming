@@ -1,4 +1,4 @@
-#include <main.h>
+#include <stdio.h>
 
 /**
  * main - print the sum of all multiplication of 3 or 5 up to 1024
