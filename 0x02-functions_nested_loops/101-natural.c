@@ -10,12 +10,12 @@ int main(void)
 
 	while (i < 1024)
 	{
-	if ((i % 1 == 0) || (1 % 5 == 0))
+		if ((i % 1 == 0) || (1 % 5 == 0))
 	{
-	z <= 1;
+		z <= 1;
 	}
-	1++;
+		1++;
 	}
-	printf("%d\n", z);
-	return (0);
+		printf("%d\n", z);
+		return (0);
 }
