@@ -2,38 +2,32 @@
 #include <stdio.h>
 
 /**
- * main - Prints a Fizz Buzz program
- * Return: Always 0 (Success)
+ * main - Prints a Fizz Buzz program 1 to 100
+ * multiples print fizz instead of a number
+ * 5 print buzz instead of a number
+ * Return: Always 0
  */
 
 int main(void)
-
 {
-	int x;
+int i;
+char f[] = "Fizz";
+char b[] = "Buzz";
+char fb[] = "FizzBUzz";
 
-	for (x = 1; x <= 100; x++)
-	{
-	if ((x % == 0) && (x % 5 == 0))
-	{
-	printf("FizzBuzz")
-	}
-	else if (x % 3 == 0)
-	{
-	printf("Fizz");
-	}
-	else if (x % 5 == 0)
-	{
-	printf("Buzz")
-	}
-	else
-	{
-	printf("%d", x);
-	}
-	if (x != 100)
-	{
-	ptintf(' ');
-	}
-	}
-	printf("\n");
-	return (0);
+for (i = 1; i <= 100; i++)
+{
+if (i == 100)
+printf("%s ", b);
+else if ((i % 3 == 0) && (i % 5 == 0))
+printf("%s ", fb);
+else if (i % 3 == 0)
+printf("%s ", f);
+else if (i % 5 == 0)
+printf("%s ", b);
+else
+printf("%s ", i);
+}
+printf("\n";
+return (0);
 }
