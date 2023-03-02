@@ -1,14 +1,11 @@
 #include "main.h"
 /**
- * _strncat - concatenate two strings
- * using at most n bytes from src
+ * _strcat - concatenate two strings
  * @dest: input value
  * @src: input value
- * @n: input value
- *
  * Return: dest
  */
-char *_strncat(char *dest, char *src, int n);
+char *_strcat(char *dest, char *src)
 {
 	int i;
 	int j;
@@ -19,7 +16,7 @@ char *_strncat(char *dest, char *src, int n);
 		i++;
 	}
 	j = 0;
-	while (j < n && src[j] != '\0')
+	while (src[j] != '\0')
 	{
 	dest[i] = src[j];
 	i++;
