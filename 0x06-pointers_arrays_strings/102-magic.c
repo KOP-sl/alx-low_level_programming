@@ -1,11 +1,14 @@
 #include "main.h"
 #include <stdio.h>
-
+/**
+ *  main - check code
+ *  Return: nothing
+ */
 int main(void)
 {
 	int n;
 	int a[5];
-	int *p;n
+	int *p;
 
 	a[2] = 1024;
 	p = &n;
