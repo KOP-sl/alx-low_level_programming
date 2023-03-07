@@ -1,18 +1,25 @@
 #include "main.h"
 /**
- * print_chessboard - Entry point
- * @a: array
+ * _strstr- Entry point
+ * @hay: input
+ * @need: input
  * Return: Always 0 (Success)
  */
-void print_chessboard(char (*a)[8])
+char *_strstr(char *hay, char *need)
 {
-	int i;
-	int j;
-
-	for (i = 0; i < 8; i++)
+	for (; *hay != '\0'; hay++)
 	{
-		for (j = 0; j < 8; j++)
-			_putchar(a[i][j]);
-		_putchar('\n');
+		char *l = hay;
+		char *p = need;
+
+		while (*l == *p && *p != '\0')
+		{
+			l++;
+			p++;
+		}
+
+		if (*p == '\0')
+			return (hay);
 	}
+	return (0);
 }
