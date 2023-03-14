@@ -7,6 +7,7 @@
  *
  * Return: pointer to the copied string (Success), NULL (Error)
  */
+
 char *_strdup(char *str)
 {
 	int a = 0, i = 1;
