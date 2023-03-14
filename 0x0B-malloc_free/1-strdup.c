@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - copies the string given as parameters
- * @str: string to duplicate
+ * _strdup - duplicates a string
+ * @srt: the string is duplicate
  *
- * Return: pointer to the copied string (Success), NULL (Error)
+ * Return: the string is duplicated
+ *
  */
-
 char *_strdup(char *str)
 {
 	int a = 0, i = 1;
@@ -25,12 +25,12 @@ char *_strdup(char *str)
 	if (s == NULL)
 		return (NULL);
 
-		while (a < i)
-		{
-			s[a] = str[a];
-			a++;
-		}
-
-		s[a] = '\0';
-		return (s);
+	while (a < i)
+	{
+		s[a] = str[a];
+		a++;
+	}
+	s[a] = '\0';
+	return (s);
 }
+_
