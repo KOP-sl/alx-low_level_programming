@@ -1,5 +1,6 @@
+#include <main.h>
 #include <stdlib.h>
-#include "holberton.h"
+
 /**
  * *_strdup - copies the string given as parameters
  * @str: string to duplicate
@@ -11,20 +12,27 @@ char *_strdup(char *str)
 	char *duplicate;
 	unsigned int i, len;
 
-	i = 0;
-	len = 0;
+	int a = 0, i = 1;
+	char *s;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[len])
-		len++;
-	duplicate = malloc(sizeof(char) * (len + 1));
+	while (str[i])
+	{
+		i++;
+	}
+	s = malloc((sizeof(char) * i) + 1);
 
-	if (duplicate == NULL)
+	if (s == NULL)
 		return (NULL);
 
-		while ((duplicate[i] = str[i]) != '\0')
-		i++;
-		return (duplicate);
+		while (a < i)
+		{
+			s[a] = str[a];
+			a++;
+		}
+
+		s[a] = '\0';
+		return (s);
 }
