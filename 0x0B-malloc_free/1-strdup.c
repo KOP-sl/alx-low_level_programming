@@ -3,7 +3,7 @@
 
 /**
  * _strdup - duplicates a string
- * @srt: the string is duplicate
+ * @str: the string is duplicate
  *
  * Return: the string is duplicated
  *
