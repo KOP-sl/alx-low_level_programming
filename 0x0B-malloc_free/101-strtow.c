@@ -16,8 +16,9 @@ int word_len(char *str)
 	{
 		len++;
 		index++;
-		return (len);
 	}
+	return (len);
+
 }
 
 /**
