@@ -79,16 +79,17 @@ char **strtow(char *str)
 		if (strings[w] == NULL)
 		{
 
-		for (; w >= 0; w--);
+			for (; w >= 0; w--);
+				free(strings[w]);
 
-		free(strings[w]);
-		free(strings);
-		return (NULL);
+			free(strings);
+			return (NULL);
 		}
 
 		for (l = 0; l < letters; l++)
-		strings[w][l] = str[index++];
-		strings[w][l] = str[index++];
+			strings[w][l] = str[index++];
+
+		strings[w][l] = '\0';
 	}
 	strings[w] = NULL;
 	return (strings);
