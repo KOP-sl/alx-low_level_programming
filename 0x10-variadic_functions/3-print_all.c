@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (t_arg[j])
 		{
-			if (format[1] == t_arg[j] && c)
+			if (format[i] == t_arg[j] && c)
 			{
 				printf(",");
 				break;
